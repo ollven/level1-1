@@ -73,12 +73,22 @@ object Deployment : BuildType({
     }
 
     dependencies {
-        artifacts(Build) {
-            artifactRules = "+:text.txt"
+        dependency(Build) {
+            snapshot {
+            }
+
+            artifacts {
+                artifactRules = "+:text.txt"
+            }
         }
-        artifacts(Installer) {
-            buildRule = lastSuccessful()
-            artifactRules = "+:installer.txt"
+        dependency(Installer) {
+            snapshot {
+            }
+
+            artifacts {
+                buildRule = lastSuccessful()
+                artifactRules = "+:installer.txt"
+            }
         }
     }
 })

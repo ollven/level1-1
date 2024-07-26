@@ -101,6 +101,8 @@ object Installer : BuildType({
     }
 
     dependencies {
+        snapshot(AbsoluteId("Tw89035_Build")) {
+        }
         artifacts(Build) {
             artifactRules = "+:text.txt"
         }

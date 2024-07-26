@@ -114,7 +114,6 @@ object Installer : BuildType({
         snapshot(AbsoluteId("Tw89035_Build")) {
         }
         artifacts(Build) {
-            buildRule = lastSuccessful()
             artifactRules = "+:text.txt"
         }
     }

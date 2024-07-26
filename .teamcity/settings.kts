@@ -83,6 +83,7 @@ object Deployment : BuildType({
         }
         dependency(Installer) {
             snapshot {
+                synchronizeRevisions = false
             }
 
             artifacts {

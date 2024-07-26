@@ -29,9 +29,11 @@ version = "2024.03"
 
 project {
 
-    buildType(Installer)
     buildType(Build)
+    buildType(Installer)
     buildType(Deployment)
+    buildTypesOrder = arrayListOf(Build, Installer, Deployment)
+
 }
 
 object Build : BuildType({

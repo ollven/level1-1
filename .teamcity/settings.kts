@@ -87,7 +87,6 @@ object Deployment : BuildType({
             }
 
             artifacts {
-                buildRule = lastSuccessful()
                 artifactRules = "+:installer.txt"
             }
         }

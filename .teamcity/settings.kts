@@ -74,7 +74,6 @@ object Deployment : BuildType({
 
     dependencies {
         artifacts(Build) {
-            buildRule = lastSuccessful()
             artifactRules = "+:text.txt"
         }
         artifacts(Installer) {
@@ -103,7 +102,6 @@ object Installer : BuildType({
 
     dependencies {
         artifacts(Build) {
-            buildRule = lastSuccessful()
             artifactRules = "+:text.txt"
         }
     }

@@ -40,12 +40,12 @@ object Build : BuildType({
     name = "Build"
 
     artifactRules = "+:text.txt => text.txt"
-    params {
-        checkbox("EnableProduction", "false", label = "EnableProduction",
-                  checked = "true", unchecked = "false")
-        checkbox("ReleaseBuild", "false", label = "ReleaseBuild",
-                  checked = "true", unchecked = "false")
-    }
+    ///params {
+        ///checkbox("EnableProduction", "false", label = "EnableProduction",
+                  ///checked = "true", unchecked = "false")
+        ///checkbox("ReleaseBuild", "false", label = "ReleaseBuild",
+                  ///checked = "true", unchecked = "false")
+    ///}
 
     vcs {
         root(DslContext.settingsRoot)
@@ -75,12 +75,12 @@ object Deployment : BuildType({
     enablePersonalBuilds = false
     type = BuildTypeSettings.Type.DEPLOYMENT
     maxRunningBuilds = 1
-     params {
-        checkbox("reverse.dep.*.EnableProduction", "false", label = "EnableProduction", display = ParameterDisplay.PROMPT,
-                  checked = "true", unchecked = "false")
-        checkbox("reverse.dep.*.ReleaseBuild", "false", label = "ReleaseBuild", display = ParameterDisplay.PROMPT,
-                  checked = "true", unchecked = "false")
-    }
+     ///params {
+        ///checkbox("reverse.dep.*.EnableProduction", "false", label = "EnableProduction", display = ParameterDisplay.PROMPT,
+                  ///checked = "true", unchecked = "false")
+        ///checkbox("reverse.dep.*.ReleaseBuild", "false", label = "ReleaseBuild", display = ParameterDisplay.PROMPT,
+                  ///checked = "true", unchecked = "false")
+    ///}
 
     vcs {
         root(DslContext.settingsRoot)
@@ -115,12 +115,12 @@ object Installer : BuildType({
     name = "Installer"
 
     artifactRules = "+:installer.txt => installer.txt"
-    params {
-        checkbox("reverse.dep.*.EnableProduction", "false", label = "EnablePdaDemo", display = ParameterDisplay.PROMPT,
-                  checked = "true", unchecked = "false")
-        checkbox("reverse.dep.*.ReleaseBuild", "false", label = "ReleaseBuild", display = ParameterDisplay.PROMPT,
-                  checked = "true", unchecked = "false")
-    }
+    ///params {
+        ///checkbox("reverse.dep.*.EnableProduction", "false", label = "EnablePdaDemo", display = ParameterDisplay.PROMPT,
+                  ///checked = "true", unchecked = "false")
+        ///checkbox("reverse.dep.*.ReleaseBuild", "false", label = "ReleaseBuild", display = ParameterDisplay.PROMPT,
+                  ///checked = "true", unchecked = "false")
+    ///}
     vcs {
         root(DslContext.settingsRoot)
     }

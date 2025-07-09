@@ -1,12 +1,2 @@
 # level1-1
-#blablablscddascdsfdfdfd
-#fdvbfmvf fvrbrbtr cljhbeljvbh
-#fvrwvrgfvgr купекпеуеп
-#ddvfdvdfv fvdfvfd efgewtgwtegwtr
-#fvsvfdsvfvdffdv
-UodateReadme
-ddscdccs
-
-
-
-adckjebdekjcnfd;kvcnw;fv
+chak revision
